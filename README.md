@@ -1,5 +1,7 @@
 # Zasoby serwera iMTA
 
+### Jeżeli ktoś posiada jakiekolwiek informacje na temat NIPu właściciela iMTA/CG, to proszę o kontakt w tej sprawie na PW.
+
 ###### Jakie zasoby można tu znaleźć
 
   - Struktura bazy danych (częściowa)
