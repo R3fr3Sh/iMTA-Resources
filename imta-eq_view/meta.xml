@@ -1,0 +1,16 @@
+<meta>
+    <info author="R3fr3Sh" type="script" name="imta-magazine" version="1.0.0" />
+    <script src="eq_view_s.lua" type="server" />
+    <script src="eq_view_c.lua" type="client" cache ="false"/>
+
+    <!--export function="giveMagazineItem" type="server" />
+	<!--(building_id, item)-->
+	<!--returns nil-->
+    <!--export function="takeMagazineItem" type="server" />
+	<!--(building_id, itemToBeTaken[ , takeAll])-->
+	<!--returns boolean and additionally itemCount if successful-->
+    <!--export function="takeAllMagazineItems" type="server" />
+	<!--(building_id)-->
+	<!--returns all items that were in magazine as Table-->
+	
+</meta>

@@ -1,0 +1,69 @@
+<meta> 
+    <download_priority_group>-1</download_priority_group>
+	
+	<script src="misc_sh.lua" type="shared" cache="false" />
+	<script src="eq_def_sh.lua" type="shared" cache="false" />
+	<script src="eq_functions_s.lua" type="server" cache="false" />
+    <script src="eq_c.lua" type="client" cache="false" />
+	<script src="eq_s.lua" type="server" />
+	
+	
+    <export function="getItemData" type="shared" />
+
+    <export function="createItem" type="server" />
+    <export function="createWeapon" type="server" />
+    <export function="createPhone" type="server" />
+	<!--
+	local aimValues = {[1] = 0.125, [2] = 0.25} --also in eq_functions_s.lua
+	local barrelValues = {[1] = true, [2] = true} --also in eq_functions_s.lua
+
+	function createWeapon(id, gunProperties)
+		item.subtype = tonumber(gunProperties.subtype) or nil
+		item.coreProperties.aim = aimValues[gunProperties.aim] and gunProperties.aim or nil --nil/1/2 
+		item.coreProperties.laser = type(gunProperties.laser) == "table" and gunProperties.laser or nil --nil/{r, g, b}
+		item.coreProperties.stock = type(gunProperties.stock) == "boolean" or nil --nil/true
+		item.coreProperties.grip = tonumber(gunProperties.grip) or nil --nil/1/2 -- ergo, pionowy
+		item.coreProperties.barrel = barrelValues[tonumber(gunProperties.barrel)] and tonumber(gunProperties.barrel) or nil  --nil/1/2 -- silencer, heavy barrel
+		item.coreProperties.ammo = tonumber(gunProperties.ammo) or 0
+		item.coreProperties.skin = tonumber(gunProperties.skin) or nil  --ID tekstury albo nil
+	-->
+	
+    <export function="getItem" type="server" />
+    <export function="getItemStackIndex" type="server" />
+    <export function="getItemsByID" type="server" />
+    <export function="getActiveItemsByID" type="server" />
+    <export function="takeItem" type="server" />
+    <export function="takeItemByStackIndex" type="server" />
+    <export function="giveItem" type="server" />
+    <export function="setPlayerEQVisibility" type="server" />
+    <export function="showPlayerEQ" type="server" />
+    <export function="disableActiveItemsByItemID" type="server" />
+
+	<export function="setPlayerEQ" type="server" />
+	<export function="getPlayerEQFromCID" type="server" />
+	<export function="getEQTradeableItems" type="server" />
+	<export function="decompressEQ" type="server" />
+	<export function="compressEQ" type="server" />
+	<export function="sortEQTable" type="server" />
+	<export function="findItem" type="server" />
+	
+	<export function="getItemName" type="shared" />
+	
+	<file src="files/icons/ammo.png"/>
+	<file src="files/icons/carparts.png"/>
+	<file src="files/icons/clothes.png"/>
+	<file src="files/icons/drugs.png"/>
+	<file src="files/icons/folder.png"/>
+	<file src="files/icons/food.png"/>
+	<file src="files/icons/gunparts.png"/>
+	<file src="files/icons/guns.png"/>
+	<file src="files/icons/luxury.png"/>
+	<file src="files/icons/other.png"/>
+	<file src="files/icons/phone.png"/>
+	<file src="files/icons/spray.png"/>
+	<file src="files/icons/steroids.png"/>
+	<file src="files/icons/rucksack.png"/>
+	<file src="files/icons/access-denied.png"/>
+	<file src="files/icons/empty-box-open.png"/>
+	<file src="files/icons/computer.png"/>
+</meta>

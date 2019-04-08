@@ -1,0 +1,13 @@
+<meta>
+    <info author="Hyperion/R3fr3Sh" type="script" name="imta-trade" version="1.0.0" />
+	
+	<file src="media/tick.png"/>
+	<file src="media/forbid.png"/>
+
+    <script src="eq_trade_s.lua" type="server" />
+    <script src="eq_trade_c.lua" type="client" cache ="false"/>
+
+    <export function="isPlayerEgibleForTrade" type="server" />
+    <export function="initializeTrade" type="server" />
+
+</meta>

@@ -1,0 +1,106 @@
+<meta>
+    <info author="R3fr3Sh" type="script" name="imta-organisations" version="1.0.0" />
+	<script src="colorpicker/colorpicker.lua" type="client" cache="false" />
+	<script src="data_c.lua" type="client" cache="false" />
+	<script src="utils_c.lua" type="client" cache="false" />
+	<script src="utils_s.lua" type="server" />
+    <script src="selector_c.lua" type="client" cache="false" />
+    <script src="panel_c.lua" type="client" cache="false" />
+    <script src="creation_c.lua" type="client" cache="false" />
+    <script src="editor_c.lua" type="client" cache="false" />
+    <script src="manager_s.lua" type="server" />
+    <script src="external_s.lua" type="server" />
+	
+    <export function="doesPlayerHavePermission" type="server" />
+	<!--
+	boolean = doesPlayerHavePermission(client, permissionID)
+		client - player
+		permissionID - number
+	-->	
+    <export function="doesOrganisationHavePermission" type="server" />
+	<!--
+	boolean = doesOrganisationHavePermission(organisationID, permissionID)
+		organisationID - number
+		permissionID - number
+	-->
+    <export function="isPlayerInOrganisation" type="server" />
+	<!--
+	false/number = isPlayerInOrganisation(client, organisationID)
+		client - player
+		organisationID - number
+	returns internal_rank if player is in organisation, false otherwise
+	-->
+    <export function="isPlayerOnDuty" type="server" />
+	<!--
+	false/number = isPlayerOnDuty(client, organisationID)
+		client - player
+		organisationID - number
+	returns organisationID if player is on duty, false otherwise
+	-->
+    <export function="getPermissionMargin" type="server" />
+	<!--
+	false/number = getPermissionMargin(organisationID, permissionID)
+		organisationID - number
+		permissionID - number
+	returns margin if organisation is allowed to use it in this category, false otherwise
+	-->
+    <export function="addCharacterToOrganisation" type="server" />
+	<!--
+	boolean = addCharacterToOrganisation(characterID, organisationID, playerRank[, client])
+		characterID - number, character id of player being added
+		organisationID - number
+		playerRank - number, 1-9
+		organisationID - player, optional, if passed then functions will display notifications if something went wrong when adding the player
+	returns true if player was added, false otherwise
+	-->
+	<export function="hasPlayerOrganisationSlot" type="server" />
+	<export function="hasOrganisationSlots" type="server" />
+	<export function="getOrganisationNameFromID" type="server" />
+	<export function="getOrganisationColorFromID" type="server" />
+	<export function="getOrganisationNameFromPlayer" type="server" />
+	<export function="getOrganisationColorFromPlayer" type="server" />
+	<export function="endPlayerDuty" type="server" />
+	<export function="getPlayerGroupByPlayerID" type="server" />
+	<export function="createPlayerWorkID" type="server" />
+	<export function="retrieveCharacterWorkDataFromID" type="server" />
+	
+	
+    <file src="media/pixels/background.png" />
+    <file src="media/pixels/grey.png" />
+    <file src="media/pixels/transparent.png" />
+    <file src="media/pixels/darkgrey.png" />
+    <file src="media/pixels/darkergrey.png" />
+    <file src="media/pixels/black.png" />
+	
+    <file src="media/icons/suitcase.png" />
+    <file src="media/icons/exit.png" />
+    <file src="media/icons/hide-window.png" />
+    <file src="media/icons/manager.png" />
+    <file src="media/icons/sports-car.png" />
+    <file src="media/icons/multiple-users-silhouette.png" />
+    <file src="media/icons/info-sign.png" />
+	
+    <file src="media/icons/sports-car-32.png" />
+    <file src="media/icons/multiple-users-silhouette-32.png" />
+    <file src="media/icons/coins-32.png" />
+    <file src="media/icons/t-shirt-black-silhouette-32.png" />
+    <file src="media/icons/business-person-silhouette-wearing-tie-32.png" />
+	
+    <file src="media/icons/police-shield-128.png" />
+    <file src="media/icons/black-homburg-hat-128.png" />
+    <file src="media/icons/caduceus-medical-symbol-128.png" />
+    <file src="media/icons/car-repair-128.png" />
+    <file src="media/icons/firefighter-silhouette-128.png" />
+    <file src="media/icons/kerchief-128.png" />
+    <file src="media/icons/microphone-128.png" />
+    <file src="media/icons/secret-agent-128.png" />
+
+	<file src="colorpicker/sv.png" />
+	<file src="colorpicker/cursor.png" />
+	<file src="colorpicker/blank.png" />
+	<file src="colorpicker/h.png" />
+  
+
+    <file src="media/calibri.ttf" />
+    <file src="media/calibri-bold.ttf" />
+</meta>
